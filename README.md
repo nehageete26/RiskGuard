@@ -267,17 +267,7 @@ Open → http://localhost:5000
 
 ---
 
-## 📸 Screenshots 
 
-### 🖥️ UI Dashboard
-
-(Add your screenshot here)
-
-### 📊 Analytics
-
-(Add charts here)
-
----
 
 ## 💡 Key Highlights
 
