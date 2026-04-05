@@ -1,0 +1,28 @@
+artifact_path: file:c:/Users/HP/OneDrive/Desktop/riskguard/notebooks/mlruns/1/models/m-57c8f9359b504a208838b002c8be3ffa/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.13.12
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.2.0
+is_signature_from_type_hint: false
+mlflow_version: 3.10.1
+model_id: m-57c8f9359b504a208838b002c8be3ffa
+model_size_bytes: 260010
+model_uuid: m-57c8f9359b504a208838b002c8be3ffa
+prompts: null
+run_id: 15b3e40659454b0181d28b03d815be0e
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 10]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-04-05 18:23:51.423428'

@@ -1,0 +1,22 @@
+artifact_path: file:c:/Users/HP/OneDrive/Desktop/riskguard/notebooks/mlruns/1/models/m-f433e3b397014962a345f28587b104c6/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.13.12
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.2.0
+mlflow_version: 3.10.1
+model_id: m-f433e3b397014962a345f28587b104c6
+model_size_bytes: 825886
+model_uuid: m-f433e3b397014962a345f28587b104c6
+prompts: null
+run_id: 73556d51744c4c89a7eb922adf3a5316
+utc_time_created: '2026-04-05 18:23:31.576218'

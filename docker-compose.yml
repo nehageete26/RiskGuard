@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    command: uvicorn app.main:app --host 0.0.0.0 --port ${API_PORT:-8000} --reload
+    ports:
+      - "${API_PORT:-8000}:${API_PORT:-8000}"
+    volumes:
+      - ./predictions.db:/app/predictions.db
+      - ./model:/app/model
+      - ./.env:/app/.env        # Mount .env into container
+    env_file:
+      - .env                    # Docker reads .env automatically
+    environment:
+      - PYTHONPATH=/app
+      - API_URL=http://api:8000 # Inside Docker, services talk by name
+
+  streamlit:
+    build: .
+    command: streamlit run streamlit_app/app.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    volumes:
+      - ./model:/app/model
+      - ./.env:/app/.env
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+      - API_URL=http://api:8000  # Streamlit calls the 'api' service by Docker hostname

@@ -1,0 +1,23 @@
+artifact_path: file:c:/Users/HP/OneDrive/Desktop/riskguard/notebooks/mlruns/1/models/m-cceb6ff6088041a790f7931208134934/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.0
+    skops_trusted_types: null
+mlflow_version: 3.10.1
+model_id: m-cceb6ff6088041a790f7931208134934
+model_size_bytes: 10144949
+model_uuid: m-cceb6ff6088041a790f7931208134934
+prompts: null
+run_id: 0cea8e6b10c146abb5309e18868376bc
+utc_time_created: '2026-04-05 18:23:20.080018'

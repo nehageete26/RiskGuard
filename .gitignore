@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env              # ← Secret keys kabhi push mat karo!
+
+# Large files
+data/cs-training.csv   # 150K rows — GitHub allow nahi karega
+model/*.npy            # Large numpy files
+predictions.db
+mlflow.db
+
+# OS
+.DS_Store
