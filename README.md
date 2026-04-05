@@ -160,7 +160,7 @@ pip install -r requirements.txt
 ### 3️⃣ Run Locally
 
 ```bash
-uvicorn app.main:app --reload  or  python uvicorn app.main:app
+uvicorn app.main:app --reload  or  python uvicorn app.main:app --reload
 streamlit run streamlit_app/app.py  or  python streamlit run streamlit_app/app.py
 ```
 
@@ -243,7 +243,7 @@ This project is designed to run **locally or via Docker**.
 ### 🖥️ Local Deployment
 
 ```bash
-uvicorn app.main:app --reload  or  python uvicorn app.main:app
+uvicorn app.main:app --reload  or  python uvicorn app.main:app --reload
 streamlit run streamlit_app/app.py  or  python streamlit run streamlit_app/app.py
 ```
 
